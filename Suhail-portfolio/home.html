@@ -2,14 +2,6 @@
 
   <meta charset="UTF-8">
 
-
-<meta name="suhail-portfolio" content="portfolio">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<link rel="shortcut icon" type="image/x-icon" href="https://cpwebassets.codepen.io/assets/favicon/favicon-aec34940fbc1a6e787974dcd360f2c6b63348d4b1f4e06c77743096d55480f33.ico">
-
-<link rel="mask-icon" type="" href="https://cpwebassets.codepen.io/assets/favicon/logo-pin-8f3771b1072e3c38bd662872f6b673a722f4b3ca2421637d5596661b4e2132cc.svg" color="#111">
-
-
   <title>Suhail Parakkal</title>
   <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet" type="text/css">
 
@@ -183,6 +175,19 @@ img {
   color: white;
 }
 
+@media only screen and (max-device-width: 480px){
+.welcome-section{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 50vh;
+  background-color: #000;
+  background-image: linear-gradient(62deg, #3a3d40 0%, #181719 100%);
+  }
+}
+
 .welcome-section > h4{
 
 }
@@ -208,10 +213,11 @@ img {
 }
 
 /* "Automagic" image grid using no media queries */
+
 .projects-grid {
   display: grid;
   grid-template-columns: repeat(2, 6fr);
-  grid-template-rows: repeat(4, 30vw);
+  grid-template-rows: repeat(2, 30vw);
   grid-gap: 4rem;
   width: 100%;
   max-width: 1280px;
@@ -240,9 +246,7 @@ img {
   transition: color 0.3s ease-out;
 }
 
-.project:hover .code {
-  color: #ff7f50;
-}
+
 
 .project-image {
   height: calc(100% - 6.8rem);
@@ -295,6 +299,19 @@ img {
   background: var(--main-gray);
 }
 
+@media only screen and (max-device-width: 480px){
+.contact-section{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+  height: 50vh;
+  background: var(--main-gray);
+}
+}
+
 .contact-section-header > h2 {
   font-size: 6rem;
 }
@@ -306,6 +323,7 @@ img {
 }
 
 .contact-section-header > p {
+  padding-top: 20px;
   font-style: italic;
 }
 
@@ -396,7 +414,7 @@ footer i {
 
 <section id="welcome-section" class="welcome-section">
   <h1>Suhail Parakkal</h1>
-  <h4>Aerospace Engineering Graduate, Web designer, Data Science Enthusiast</h4>
+  <h4>Aerospace Engineering Graduate, Web Designer, Data Science Enthusiast</h4>
   <p>Bachelor's in Aeronautical Engineering, Manipal Institute of Technology (MIT)</p>
 </section>
 
@@ -408,6 +426,14 @@ footer i {
   <h2 class="projects-section-header">These are some of my projects</h2>
 
   <div class="projects-grid">
+    <a href="https://bandofbrothers.herokuapp.com/" target="_blank" class="project project-tile">
+      <img class="project-image" src="bob.jpeg" alt="project">
+      <p class="project-title">
+        <span class="code">&lt;</span>
+        Web page for a local football team
+        <span class="code">/&gt;</span>
+      </p>
+    </a>
     <a href="https://drive.google.com/file/d/1Xb0rYJDn1hg85Za7XsvF602nQxB98LC9/view?usp=sharing" target="_blank" class="project project-tile">
       <img class="project-image" src="projects/biplane.png" alt="project">
       <p class="project-title">
@@ -451,8 +477,8 @@ footer i {
     <a href="https://www.facebook.com/suhail767" target="_blank" class="btn contact-details"><i class="fab fa-facebook-square"></i> Facebook</a>
     <a id="profile-link" href="https://github.com/suhail767" target="_blank" class="btn contact-details"><i class="fab fa-github"></i> GitHub</a>
     <a href="https://www.linkedin.com/in/suhail767/" target="_blank" class="btn contact-details"><i class="fab fa-linkedin"></i> LinkedIn</a>
-    <a href="suhailparakkal767@gmail.com" class="btn contact-details"><i class="fas fa-at"></i> Send a mail</a>
-    <a href="+91-8086284177" class="btn contact-details"><i class="fas fa-mobile-alt"></i> Call me</a>
+    <a href="mailto:suhailparakkal767@gmail.com" class="btn contact-details"><i class="fas fa-at"></i> Send a mail</a>
+    <a href="tel:+918086284177" class="btn contact-details"><i class="fas fa-mobile-alt"></i> Call me</a>
   </div>
 </section>
 
@@ -466,20 +492,14 @@ footer i {
   </p>
   <p>
       Take a look at my
-    <a href="https://www.freecodecamp.com/" target="_blank">Resume <i class="fa fa-file-text"></i></a>
+    <a href="https://drive.google.com/file/d/1jcF-VpJshpRuk761igm7bLFnFnzGowwa/view?usp=sharing" target="_blank">Resume <i class="fa fa-file-text"></i></a>
   </p>
 </footer>
 
 <!-- END FOOTER SECTION -->
-    <script src="https://cpwebassets.codepen.io/assets/common/stopExecutionOnTimeout-157cd5b220a5c80d4ff8e0e70ac069bffd87a61252088146915e8726e5d9f147.js"></script>
 
-  <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script><div id="fcc_test_suite_wrapper" style="position: relative !important; z-index: 99999 !important;"></div>
-      <script id="rendered-js">
-// coded by @lasjorg
-// eslint-disable-next-line no-unused-vars
-const projectName = 'portfolio';
-//# sourceURL=pen.js
-    </script>
+
+
 
 
 
